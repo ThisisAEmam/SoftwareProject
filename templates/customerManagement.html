@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid container">
+                <div id="customerServices">
+                    <div class="row">
+                      {% if person== "Chef" or person=="Waiter" or person=="Chef Assistant" or person=="manager" %}
+                        <div class="col-md-4 col-lg-4 col-sm-12 m-t-20">
+                            <div class="card card-shadow" data-aos="flip-left" data-aos-duration="1200">
+                                <i class="icon-Receipt-4 text-success text-center m-t-40 m-b-20"></i>
+                                <div class="card-body text-center">
+                                    <h3 class="font-medium text-uppercase">ORDERS</h3>
+                                    <p class="font-16 m-t-20 text-center">Adding, viewing, editing, and canceling orders.</p>
+                                    <button
+                                        class="btn btn-outline-success font-medium m-t-30 m-b-20 ordersBtn">Proceed to Orders</button>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if   person=="Waiter" or person=="Receptionist" or person=="manager" %}
+                        <div class="col-md-4 col-lg-4 col-sm-12 m-t-20">
+                            <div class="card card-shadow" data-aos="flip-down" data-aos-duration="1200">
+                                <i class="icon-Book text-danger text-center m-t-40 m-b-20"></i>
+                                <div class="card-body text-center">
+                                    <h3 class="font-medium text-uppercase">RESERVING TABLES</h3>
+                                    <p class="font-16 m-t-20 text-center">Customers can reserve/book a table for another time.</p>
+                                    <button
+                                        class="btn btn-outline-danger font-medium m-t-30 m-b-20 reserveTableBtn">Reserve a Table</button>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if person=="manager" %}
+                        <div class="col-md-4 col-lg-4 col-sm-12 m-t-20">
+                            <div class="card card-shadow" data-aos="flip-right" data-aos-duration="1200">
+                                <div class="cardIcons text-center">
+                                    <i class="fa fa-star text-warning m-t-40 m-b-20"></i>
+                                    <i class="fa fa-star-half-empty text-warning m-t-40 m-b-20"></i>
+                                    <i class="fa fa-star-o text-warning m-t-40 m-b-20"></i>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h3 class="font-medium text-uppercase">Feedbacks</h3>
+                                    <p class="font-16 m-t-20 text-center">Getting feedbacks from customers about the
+                                        quality of our
+                                        place.</p>
+                                    <button class="btn btn-outline-warning font-medium m-t-30 m-b-20 feedbackManageBtn">Proceed
+                                        to
+                                        Feedbacks</button>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+
+                <div id="otherPages">
+                    <div class="align-self-center pageLoaderSection"></div>
+                </div>
+                <!-- End Container-fluid -->
+            </div>
+            <!-- End Page Wrapper  -->
+        </div>
+        <!-- End Main Wrapper -->
+
+{% endblock %}

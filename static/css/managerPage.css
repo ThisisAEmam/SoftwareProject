@@ -1,0 +1,97 @@
+/*******************
+Manager Page
+*******************/
+.managerMainWrapper .page-wrapper {
+    margin-top: 230px;
+}
+
+.managerMainWrapper .card {
+    border: 1px solid #2222221a;
+    border-bottom: 2px solid #188ef4;
+    box-shadow: 3px 5px 10px #22222222;
+    transition: all 0.5s !important;
+}
+
+.managerMainWrapper .card:hover {
+    transform: translateY(-5px);
+}
+
+.managerMainWrapper .card i {
+    font-size: 50px;
+}
+
+.managerMainWrapper .card i.icon-Administrator{
+    font-weight: 600;
+}
+
+.managerMainWrapper .card h3 {
+    font-size: 30px;
+    color: #3e4555;
+    font-family: 'Gabriela', serif;
+    margin-bottom: -10px;
+}
+
+.managerMainWrapper .card p {
+    margin-bottom: 10px;
+    font-family: 'Gabriela', serif;
+}
+
+.pageLoader {
+    border: 5px solid #f3f3f3;
+    /* Light grey */
+    border-top: 5px solid #188ef4;
+    /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 0.5s linear infinite;
+    margin-left: 50%;
+    margin-top: 40%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .pageLoader {
+        margin-left: 45%;
+        margin-top: 100%;
+    }
+}
+
+
+.signOutBtn{
+    margin-left: 30px;
+    font-size: 20px;
+    color: #f3f3f3;
+}
+
+
+
+.signOutBtn a{
+    margin-left: 5px;
+    color: #f3f3f3;
+    font-size: 16px;
+    background: #188ef4;
+    background: -webkit-linear-gradient(legacy-direction(to right), #188ef4 0%, #316ce8 100%);
+    background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+    background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
+    background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+    border-color: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+}
+
+.signOutBtn a:hover{
+    background: -webkit-linear-gradient(to right, #1784e4 0%, #2b5fcf 100%);
+    background: -webkit-linear-gradient(to right, #1784e4 0%, #2b5fcf 100%);
+    background: -o-linear-gradient(to right, #1784e4 0%, #2b5fcf 100%);
+    background: linear-gradient(to right, #1784e4 0%, #2b5fcf 100%);
+    border-color: linear-gradient(to right, #1784e4 0%, #2b5fcf 100%);
+    color: #e7e7e7;
+}

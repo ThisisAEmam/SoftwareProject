@@ -1,0 +1,249 @@
+#customerServices .cardIcons {
+    position: relative;
+}
+
+#customerServices .fa-star {
+    display: inline-block;
+}
+
+.breadcrumb {
+    margin-top: -30px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 20px;
+}
+
+.breadcrumb a {
+    color: #188ef4;
+    transition: all 0.25s;
+}
+
+.breadcrumb a:hover {
+    color: #1675c9;
+}
+
+.customerServiceBtn i {
+    color: #188ef4;
+    font-size: 22px;
+    font-weight: 800;
+    transition: all 0.25s;
+}
+
+.customerServiceBtn i:hover {
+    color: #1675c9;
+}
+
+#feedbackSection .card-title,
+#feedbackSection .feedbackStars .lead {
+    font-family: 'Gabriela', serif;
+}
+
+#feedbackSection .card-title {
+    font-weight: 600;
+}
+
+#feedbackSection .card-title span {
+    color: #188ef4;
+}
+
+#feedbackSection .feedbackStars .feedbackStar .progress {
+    margin-top: 11px;
+}
+
+#feedbackSection .topFeedbacks i.fa {
+    font-size: 22px;
+}
+
+#feedbackSection .topFeedbacks blockquote {
+    border: none;
+    margin-bottom: 0;
+}
+
+#client-testimonial-carousel {
+    height: 100px !important;
+}
+
+#feedbackSection .topFeedbacks .carousel-item {
+    padding-top: 15px !important;
+}
+
+/************************************** ORDERS ***********************************/
+
+#ordersSection .heading {
+    font-family: 'Gabriela', serif;
+    margin: 30px 0;
+}
+
+#ordersSection .card {
+    max-width: 380px !important;
+    margin-right: 10px;
+}
+
+#ordersSection .card-title span {
+    color: #188ef4;
+}
+
+#ordersSection .customersOrders {
+    margin-top: 40px;
+}
+
+#ordersSection .orderTableBody td {
+    font-weight: 600;
+    font-size: 15px;
+    color: #3e4555;
+}
+
+#ordersSection .orderTableBody td.orderItemQuanity {
+    color: #188ef4;
+}
+
+#ordersSection .orderTableBody tr:last-child {
+    border-top: 2px solid #3e4555;
+}
+
+#ordersSection .orderTableBody tr:last-child td{
+    font-size: 18px;
+    color: #188ef4;
+}
+
+#ordersSection .container-fluid {
+    position: relative;
+}
+
+.checkoutSuccessAlertDiv {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    top: -180px;
+    display: none;
+}
+
+/* #ordersSection .card {
+    height: 460px !important;
+} */
+
+
+
+/************************************** RESERVE TABLE ***********************************/
+
+#reserveTableSection .heading {
+    font-family: 'Gabriela', serif;
+    margin: 30px 0;
+}
+
+#reserveTableSection .showTables {
+    margin-left: 85.75%;
+    transform: translateY(-10px);
+    width: 160px;
+}
+
+#reserveTableSection .accordion {
+    margin-top: -55px;
+}
+
+#reserveTableSection .card {
+    max-width: 380px !important;
+    margin-right: 10px;
+}
+
+#reserveTableSection .card-title span {
+    color: #188ef4;
+}
+
+#reserveTableSection .reserveTableBody td {
+    font-weight: 600;
+    font-size: 20px;
+    color: #3e4555;
+    border: none;
+}
+
+#reserveTableSection .reserveTableTable {
+    margin-top: 30px;
+    margin-left: -20px;
+}
+
+#reserveTableSection .reserveTableBody td.reserveTableItemQuanity {
+    color: #188ef4;
+}
+
+#reserveTableSection .container-fluid {
+    position: relative;
+}
+
+.checkoutSuccessAlertDiv {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    top: -180px;
+    display: none;
+}
+
+#reserveTableSection .tableImg {
+    margin-top: -30px;
+    height: 250px;
+    width: 250px;
+    transform: translateX(12%);
+}
+
+#reserveTableSection .reservedTable .reservedTableBody {
+    filter: grayscale(100%);
+}
+
+#reserveTableSection .reservedTable .cardReserveTableBtn {
+    display: none;
+}
+
+#reserveTableSection .reservedTable .reservedTableBody .card-body{
+    padding-bottom: 0px;
+}
+
+#reserveTableSection .notReserved .reservedTableBody .card-body{
+    margin-bottom: 15px !important;
+}
+
+#reserveTableSection .notReserved .reservationCancelBtn{
+    display: none;
+}
+
+#reserveTableSection .notReserved .cardReserveTableBtn{
+    margin-top: -25px;
+}
+
+#reserveTableSection .reservedRibbon {
+    margin-left: -5px;
+    margin-top: 20px;
+    font-size: 26px;
+}
+
+#reserveTableSection .notReserved .reservedRibbon{
+    display: none;
+}
+
+#reserveTableSection .card:hover{
+    transform: none;
+}
+
+#reserveTableSection .tablesNav {
+    margin-top: 20px;
+}
+
+#reserveTableSection .tablesNav .nav-tabs.customtab li {
+    font-family: 'Gabriela', serif;
+    font-size: 20px;
+    color: #3e4555;
+}
+
+#reserveTableSection .tablesNav .nav-tabs.customtab li .nav-link.active {
+    background-color: #188ef4;
+    color: #f3f3f3;
+}
+
+#reserveTableSection .tablesNav .nav-tabs.customtab li .nav-link.active:hover {
+    color: #e7e7e7;
+}
+
+#reserveTableSection .tablesNav .nav-tabs.customtab li .nav-link:hover {
+    color: #188ef4;
+}

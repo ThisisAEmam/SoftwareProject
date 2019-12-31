@@ -1,0 +1,242 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid container">
+                <div id="ordersSection">
+                    <ol class="breadcrumb m-b-10">
+                        <li class="breadcrumb-item"><a href="#" class="customerServiceBtn"><i
+                                    class="ti-arrow-circle-left"></i></a></li>
+                        <li class="breadcrumb-item"><a href="#" class="customerServiceBtn">Customer Services</a></li>
+                        <li class="breadcrumb-item active">Orders</li>
+                    </ol>
+                    <h2 class="heading">ORDERS</h2>
+                    <div class="row customersOrders">
+                        <div class="card col-md-4 col-lg-4 col-sm-12">
+                            <div class="heading m-t-40 m-b-10">
+                                <h3 class="card-title">ORDER <SPAN>#1</SPAN></h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th>Name</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center orderTableBody">
+                                            <tr>
+                                                <td class="orderItemName">Pizza Nineteen</td>
+                                                <td class="orderItemQuanity">2</td>
+                                                <td><span class="orderItemPrice">139.98</span> EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="orderItemName">Pasta Ceasar</td>
+                                                <td class="orderItemQuanity">1</td>
+                                                <td><span class="orderItemPrice">49.99</span> EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="orderItemName">Fruit Salad</td>
+                                                <td class="orderItemQuanity">4</td>
+                                                <td><span class="orderItemPrice">59.96</span> EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="orderItemName">Fries</td>
+                                                <td class="orderItemQuanity">3</td>
+                                                <td><span class="orderItemPrice">44.97</span> EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="orderTotalPrice">651</span> EGP</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <a class="text-danger orderCancelBtn m-t-40" data-toggle="modal"
+                                    href="#orderCancelModal" role="button"> Cancel Order</a>
+                                <a class="btn btn-success orderCheckoutBtn float-right m-t-20" data-toggle="modal"
+                                    href="#checkoutModal" role="button">Checkout</a>
+                            </div>
+                        </div>
+                        <div class="card col-md-4 col-lg-4 col-sm-12">
+                            <div class="heading m-t-40 m-b-10">
+                                <h3 class="card-title">ORDER <SPAN>#2</SPAN></h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th>Name</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center orderTableBody">
+                                            <tr>
+                                                <td class="orderItemName">Pizza Nineteen</td>
+                                                <td class="orderItemQuanity">2</td>
+                                                <td><span class="orderItemPrice">139.98</span> EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="orderItemName">Pasta Ceasar</td>
+                                                <td class="orderItemQuanity">1</td>
+                                                <td><span class="orderItemPrice">49.99</span> EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="orderItemName">Fruit Salad</td>
+                                                <td class="orderItemQuanity">4</td>
+                                                <td><span class="orderItemPrice">59.96</span> EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="orderItemName">Fries</td>
+                                                <td class="orderItemQuanity">3</td>
+                                                <td><span class="orderItemPrice">44.97</span> EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="orderTotalPrice">651</span> EGP</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <a class="text-danger orderCancelBtn m-t-40" data-toggle="modal"
+                                    href="#orderCancelModal" role="button"> Cancel Order</a>
+                                <a class="btn btn-success orderCheckoutBtn float-right m-t-20" data-toggle="modal"
+                                    href="#checkoutModal" role="button">Checkout</a>
+                            </div>
+                        </div>
+                        <div class="card col-md-4 col-lg-4 col-sm-12">
+                            <div class="heading m-t-40 m-b-10">
+                                <h3 class="card-title">ORDER <SPAN>#3</SPAN></h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="text-center">
+                                                <th>Name</th>
+                                                <th>Quantity</th>
+                                                <th>Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-center orderTableBody">
+                                            <tr>
+                                                <td class="orderItemName">Pizza Nineteen</td>
+                                                <td class="orderItemQuanity">2</td>
+                                                <td><span class="orderItemPrice">139.98</span> EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="orderItemName">Pasta Ceasar</td>
+                                                <td class="orderItemQuanity">1</td>
+                                                <td><span class="orderItemPrice">49.99</span> EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="orderItemName">Fruit Salad</td>
+                                                <td class="orderItemQuanity">4</td>
+                                                <td><span class="orderItemPrice">59.96</span> EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="orderItemName">Fries</td>
+                                                <td class="orderItemQuanity">3</td>
+                                                <td><span class="orderItemPrice">44.97</span> EGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td><span class="orderTotalPrice">651</span> EGP</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <a class="text-danger orderCancelBtn m-t-40" data-toggle="modal"
+                                    href="#orderCancelModal" role="button"> Cancel Order</a>
+                                <a class="btn btn-success orderCheckoutBtn float-right m-t-20" data-toggle="modal"
+                                    href="#checkoutModal" role="button">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="alert alert-success checkoutSuccessAlertDiv alert-dismissable slideInDown animated fade" id="checkoutSuccessAlert"
+                    role="alert">
+                    <strong>Successful!</strong> The order has been printed successfully.
+                </div>
+
+                <div class="alert alert-danger checkoutSuccessAlertDiv alert-dismissable slideInDown animated fade" id="orderCancelAlert"
+                role="alert">
+                <strong>Cancelled!</strong> The order has been cancelled successfully.
+            </div>
+
+                <!-- CHECKOUT MODAL -->
+                <div id="checkoutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Checkout Order</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body px-4">
+                                <form class="form" role="form" autocomplete="off" id="formCheckout" novalidate=""
+                                    method="POST">
+                                    <h4 class="text-center my-5 font-medium">Do you want to checkout this order and
+                                        print it?</h4>
+                                    <div class="form-group p-t-10">
+                                        <a href="#" class="btn btn-success btn-lg float-left" id="btnCheckout">Yes, Checkout
+                                            please!</a>
+                                        <button class="btn cancelBtn btn-outline-secondary btn-lg float-right"
+                                            data-dismiss="modal" aria-hidden="true">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CANCEL MODAL -->
+                <div id="orderCancelModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Checkout Order</h3>
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body px-4">
+                                <form class="form" role="form" autocomplete="off" id="formOrderCancel" novalidate=""
+                                    method="POST">
+                                    <h4 class="text-center my-5 font-medium">Do you want to cancel this order?</h4>
+                                    <div class="form-group p-t-10">
+                                        <a href="#" class="btn btn-danger btn-lg float-left" id="btnOrderCancel">Yes, Cancel
+                                            it!</a>
+                                        <button class="btn cancelBtn btn-outline-secondary btn-lg float-right"
+                                            data-dismiss="modal" aria-hidden="true">No, Keep it!</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="otherPages">
+                    <div class="align-self-center pageLoaderSection"></div>
+                </div>
+                <!-- End Container-fluid -->
+            </div>
+            <!-- End Page Wrapper  -->
+        </div>
+        <!-- End Main Wrapper -->
+  {% endblock %}

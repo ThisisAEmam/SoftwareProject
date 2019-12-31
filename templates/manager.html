@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div id="for-js" class="container-fluid container">
+                <div id="managerHome">
+                    <div class="row">
+                      {% if person== "Chef" or person=="Accountant" or person=="manager" %}
+                        <div class="col-md-6 col-lg-6 col-sm-12 wrap-feature2-box">
+                            <div class="card card-shadow" data-aos="flip-left" data-aos-duration="1200">
+                                <i class="ti-truck text-info text-center m-t-40 m-b-20"></i>
+                                <div class="card-body text-center">
+                                    <h3 class="font-medium text-uppercase">Stock Management</h3>
+                                    <p class="font-16 m-t-20 text-center">Adding, removing, and monitoring the goods in
+                                        stock.</p>
+                                    <button class="btn btn-outline-info font-medium m-t-10 m-b-20 stockManageBtn">Manage
+                                        Stocks</button>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% if person=="manager"  %}
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            <div class="card card-shadow" data-aos="flip-right" data-aos-duration="1200">
+                                <i class="ti-id-badge text-danger text-center m-t-40 m-b-20"></i>
+                                <div class="card-body text-center">
+                                    <h3 class="font-medium text-uppercase">Staff Management</h3>
+                                    <p class="font-16 m-t-20 text-center">Hiring, firing, and managing staff members'
+                                        salaries and roles.</p>
+                                    <button
+                                        class="btn btn-outline-danger font-medium m-t-10 m-b-20 stuffManageBtn">Manage
+                                        Staff</button>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            <div class="card card-shadow" >
+                                <i class="icon-Administrator text-success text-center m-t-40 m-b-20"></i>
+                                <div class="card-body text-center">
+                                    <h3 class="font-medium text-uppercase">Customer Services</h3>
+                                    <p class="font-16 m-t-20 text-center">Reserving, ordering, and getting feedback from
+                                        customers.</p>
+                                    <button class="btn btn-outline-success font-medium m-t-10 m-b-20 customerServiceBtn">Customer
+                                        Services</button>
+                                </div>
+                            </div>
+                        </div>
+                        {% if person== "Chef" or person=="manager" or person=="Accountant"   %}
+                        <div class="col-md-6 col-lg-6 col-sm-12">
+                            <div class="card card-shadow" >
+                                <i class="ti-book text-warning text-center m-t-40 m-b-20"></i>
+                                <div class="card-body text-center">
+                                    <h3 class="font-medium text-uppercase">Menu Management</h3>
+                                    <p class="font-16 m-t-20 text-center">Adding, removing, and displaying the meals in
+                                        the menu.</p>
+                                    <button class="btn btn-outline-warning font-medium m-t-10 m-b-20 menuManageBtn">Manage
+                                        Menu</button>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+
+                <div id="otherPages">
+                    <div class="align-self-center pageLoaderSection"></div>
+                </div>
+                <!-- End Container-fluid -->
+            </div>
+            <!-- End Page Wrapper  -->
+        </div>
+        <!-- End Main Wrapper -->
+
+{% endblock %}
